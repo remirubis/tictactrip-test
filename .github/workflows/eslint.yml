@@ -2,8 +2,7 @@ name: Lint
 on:
   pull_request:
     branches:
-      - main
-      - develop
+      - "*"
 
 env:
   NODE_VERSION: 16
