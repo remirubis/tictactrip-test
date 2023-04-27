@@ -63,6 +63,15 @@ make down
 make build
 ```
 
+## Endpoints
+
+| URL | Description | Header | Body | Return |
+|-----|-------------|--------|------|--------|
+| https://tictactrip-api.fly.dev/api/token | Generate an access token with your email address | :x: | `{ "email": "email@example.com" }` | { "accessToken": "TOKEN" } | 
+| https://tictactrip-api.fly.dev/api/justify | Justify a text | Authorization Bearer `TOKEN` | Your text | Returns the text justified |
+| https://tictactrip-api.fly.dev/api/justify?limit=2 | Justify a text with a specific limit of caracters | Authorization Bearer `TOKEN` | Your text | Returns the text justified with 2 caracters |
+
+
 ## :fr: Contributor
 
 - :link: [Rémi Rubis](https://github.com/remirubis)
