@@ -30,6 +30,14 @@ git clone <link>
 make install
 ```
 
+- Configure .env file
+
+First copy and past `.env.sample` file and rename it to `.env` and in this file configure your environment
+
+```
+ACCESS_TOKEN_SECRET=<Your secret key for authentication>
+```
+
 **That's it! Everything is ready.**
 
 ### Launch project using docker
