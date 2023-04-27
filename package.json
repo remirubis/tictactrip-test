@@ -11,7 +11,9 @@
     "lint": "eslint --cache --ext .ts",
     "lint:fix": "yarn lint -- --cache --fix",
     "clean": "rm -rf dist/*",
-    "test": "set PORT=0&&jest --verbose --coverage"
+    "test": "set PORT=0&&jest",
+    "test:verbose": "set PORT=0&&jest --verbose",
+    "test:coverage": "set PORT=0&&jest --verbose --coverage"
   },
   "dependencies": {
     "@jest/globals": "^29.5.0",

@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
 import { justify } from '../controllers';
-import { isAuthenticated } from '../middlewares';
+import { isAuthenticated, rateLimit } from '../middlewares';
 
 export const justifyRouter = Router();
 
-justifyRouter.post('/', isAuthenticated, justify);
+justifyRouter.post('/', [isAuthenticated, rateLimit], justify);
