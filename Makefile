@@ -1,5 +1,5 @@
 install:
-	cd app && yarn install && cd ../
+	yarn install
 
 build:
 	docker-compose build
