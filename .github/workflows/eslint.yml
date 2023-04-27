@@ -8,7 +8,7 @@ env:
   NODE_VERSION: 16
 
 jobs:
-  linting:
+  lint:
     name: ESLint
     runs-on: ubuntu-latest
     steps:
@@ -26,9 +26,10 @@ jobs:
       - name: Code Linting
         run: yarn lint
 
-  test:
+  tests:
     name: Run jest tests
     runs-on: ubuntu-latest
+    needs: lint
     steps:
       - name: Code Checkout
         uses: actions/checkout@v3
